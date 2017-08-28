@@ -1,14 +1,7 @@
 import sys
 sys.path.insert(0,'/home/sszj/xuyiwen/flask/examples/blueprintexample')
-#sys.path.insert(0,'/home/sszj/xuyiwen/flask/examples/blueprintexample/hello_world')
 from flask import Flask, Blueprint
-#from blueprintexample.simple_page import simple_page
 from simple_page.simple_page import simple_page
-#from hello_world.hello_world import hello_world
-#import hello_world
-#import simple_page
-#from blueprintexample.hello_world import hello_world
-#hello_world = Blueprint('hello_world', __name__, template_folder='templates')
 app = Flask(__name__)
 app.register_blueprint(simple_page)
 # Blueprint can be registered many times
